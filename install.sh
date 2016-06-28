@@ -6,13 +6,6 @@ then
     echo -e "\nPlease run as root...\n"; exit 1
 fi
 
-# Checking the current working directory
-if [ ! -f "${PWD}/site.yml" ];
-then
-    echo -e "\nFile site.yml missing...Please check the working directory\n"
-    exit 1
-fi
-
 LOCAL_DIR=${PWD}
 source $LOCAL_DIR/var.ini
 
